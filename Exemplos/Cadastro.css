@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Lato:wght@700&display=swap");
+
+:root {
+    --fonte-titulo: "Lato", sans-serif;
+    --fonte-texto: "Kalam", cursive;
+
+    --cor-principal: #112D4E;
+    --cor-secundaria: #3F72AF;
+    --cor-tercearia: #DBE2EF;
+    --cor-fonte: #F9F7F7;
+
+    --cor-preto: #000000;
+    --cor-fundo: linear-gradient(to bottom, var(--cor-secundaria), 70%, var(--cor-principal));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+  }
+  
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: var(--cor-fundo);
+    color: var(--cor-fonte);
+    margin-top: 20vh;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+  }
+  .form-group {
+    
+    margin-right: 20px; 
+}
+ h1 {
+    
+    font-size: var(--fonte-titulo);
+    color: var(--cor-fonte);
+  }
+
+  p {
+    font-size: var(--fonte-texto);
+    color: var(--cor-fonte);
+  }
+
+  textarea:focus, input:focus{
+    outline: none;
+  }
+  
+  a {
+    font-size: .8rem;
+  }
+  
+  a:hover {
+    color: var(--cor-preto);
+  }
+  
+  
+  /* formulário */
+  form {
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px; /* Adjust the maximum width as needed */
+    margin: auto;
+    margin-top: 15vh;
+  }
+  
+  label, input {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  
+  label {
+    font-weight: var(--fonte-texto);
+    font-size: .8rem;
+  }
+  
+  input {
+    border-bottom: 2px solid #000000;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-weight: var(--fonte-texto);
+    width: 200px; /* Adjust the width as needed */
+    padding: 8px;
+    box-sizing: border-box;
+  }
+
+  
+  .a{
+    margin-top: 5px;
+    color: var(--cor-fonte);
+    background-color: transparent;
+
+  }
+  .botão {
+    border-bottom: 2px solid #000000;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px; 
+    margin-top: 20px;
+    background-color:#FFF; 
+    font-weight: var(--fonte-texto);
+    width: 100%;
+    color: var(--cor-preto);
+}
+.botão:hover {
+    
+    background-color:var(--cor-preto);
+    color: var(--cor-fonte);
+    transition: 0.3s; /* Adiciona uma transição suave durante o hover */
+}
+  input:focus {
+    border-bottom: 2px solid #83c5f3;
+  }
+  
+  #forgot-pass {
+    display: block;
+    text-align: right;
+  }
+  
+  input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #08558B;
+    font-weight: var(--fonte-texto);
+    width: auto;
+  }
+
+  #cadastro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+  input[type="submit"]:hover {
+    background-color: #1B223C;
+    transition: .5s;
+  }
+  
+  /* registrar */
+  #register-container p {
+    margin-bottom: 10px;
+  }
+
+  #cadastro-container  h2, p, label {
+    color: #FFF;
+  }
+
+  

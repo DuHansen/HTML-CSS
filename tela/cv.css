@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inclusive+Sans&display=swap');
+
+:root{                                      /*Retorna variaveis*/
+    --cor-fundo: #272727;
+    --cor-principal: #D8D9DA;
+    --cor-secundario: #61677A;
+    --cor-fonte: #ffffff;
+    --cor-linha-tabela: #000000;
+    --cor-amarela: #83f1ea;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+p:hover{
+    background-color: var(--cor-amarela);
+}
+body {
+    display: flex;/*Permite colocar ao lado*/
+    background-color: var(--cor-fundo);
+}
+
+header {
+    margin: 20px;
+    border: 3px var(--cor-fonte);
+    border-radius: 15px;
+    padding: 20px;
+    width: 20%;
+}
+main {
+    margin: 20px;
+    border: 3px var(--cor-principal);
+    border-radius: 15px;
+    padding: 20px;
+    width: 20%;
+}
+
+
+/*Tela lateral*/
+.lateral {
+    font-family: 'Mooli', sans-serif;
+    width: 25%;
+    text-align: center;
+    background-color: var(--cor-fonte);
+
+}
+.foto {
+    padding: 40px 0px; 
+    margin: 5px 15px 5px 10px;
+
+}
+.interesses, .referencias, .contato {
+    padding: 40px 0px; 
+}
+.contato h2, .interesses h2, .referencias h2{
+    padding: 10px 0px;
+}
+.contato h2:hover, .interesses h2:hover, .referencias h2:hover{
+    background-color: var(--cor-secundario);
+}
+
+.social{
+    display: flex;
+    justify-content: space-around;/*Distribuir as imagens em espaços iguais*/
+    margin-top: 30px; /* Espaço superior opcional */
+}
+.contato p, .referencias p, .educacao p, .profissional p, .projetos p{
+    margin: 10px 0px;
+}
+
+.referencias p {
+    margin: 10px 25px;
+    text-align: justify;
+}
+
+/*Princial*/
+.principal{
+    background-color: var(--cor-principal);
+    margin: 50px 0px;
+    padding: 30px 0px 0px 50px;
+    width: 100%;
+    font-family: 'Inclusive Sans', sans-serif;
+}
+
+.tecnica, .pessoal, .profissional, .educacao, .certificacao, .projetos, .idioma{
+    padding: 10px 0px 20px 0px;
+}
+
+.titulo{
+    background-color: var(--cor-secundario);
+    color: var(--cor-fonte);
+    border: 3px var(--cor-secundario);
+    border-radius: 15px;
+    font-family: 'Molli', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.tecnico ul, .profissional ul, .certificação ul, .educacao ul, .tecnica ul, .pessoal ul{
+    padding: 15px 0px 15px 50px;
+}
+
+.pessoal al{
+    padding: 15px 0px 15px 50px;
+}
+
+table{
+    margin: 30px 0px 0px 20px;
+    border: 2px rgb(251, 255, 24);
+    table-layout: fixed;
+    border-collapse: collapse;
+    background-color: var(--cor-secundario);
+}
+
+thead th:nth-child(1) {
+    width: 20%;
+}
+
+thead th:nth-child(2) {
+    width: 20%;
+}
+
+thead th:nth-child(3) {
+    width: 20%;
+}
+
+thead th:nth-child(4) {
+    width: 20%;
+}
+
+thead th:nth-child(5) {
+    width: 20%;
+}
+
+thead{
+    color: var(--cor-fonte);
+}
+th, td {
+    padding: 5px;
+}
+
+tbody td {
+    text-align: center;
+}
+
+tbody tr:nth-child(odd){
+    background-color: var(--cor-principal);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--cor-secundario);
+}
+
+.imagem {
+    margin: 5px 15px 5px 10px;
+}
+/*
+body { 
+    background-color: lightskyblue;  
+    align-items: left; Alinhe o conteúdo horizontalmente 
+}
+*/
+
+

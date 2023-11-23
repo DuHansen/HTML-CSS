@@ -1,0 +1,73 @@
+<!DOCTYPE html> 
+<html lang="pt-br"> 
+
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./Cadastro.css"/>
+    
+</head>
+
+<body class="body">    
+    <h1>Cadastro de novo Usuário</h1>
+    <p>Preencha as informações abaixo para criar uma conta no Senhor Finanças</p>
+    <div id="cadastro-container"> <!-- Corrected id attribute -->
+        <form action="" >
+            <table>
+                <tbody>
+                    <tr>
+                        <td>
+                            <div class="form-group">
+                                <label for="Nome:">Nome:</label>
+                                <input class="input" type="text" name="Nome" id="Nome">
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <label for="CPF:">CPF:</label>
+                                <input class="input" type="text" name="cpf" id="cpf">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-group">
+                                <label for="Email">Email:</label>
+                                <input class="input" type="email" name="Email" id="Email">
+                            </div>
+                        </td>
+                        <td>
+                            <div>
+                                <label for="Data_nascimento:">Data de nascimento:</label>
+                                <input class="input" type="date" name="dt_nascimento" id="dt_nascimento">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div>
+                                <!-- Corrected id attribute -->
+                                <label for="Login">Login:</label>
+                                <input class="input" type="text" name="Login" id="Login">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="form-group">
+                                <label for="Senha:">Senha:</label>
+                                <input class="input" type="password" name="Senha" id="Senha">
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        <div class="form-group">
+            <button class = "botão" type = "submit">Cadastrar</button>
+        </div>
+    </div>
+</body>
+
+</html>

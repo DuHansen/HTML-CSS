@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam&family=Lato:wght@700&display=swap");
+
+:root {
+    --fonte-titulo: "Lato", sans-serif;
+    --fonte-texto: "Kalam", cursive;
+
+    --cor-principal: #112D4E;
+    --cor-secundaria: #3F72AF;
+    --cor-tercearia: #DBE2EF;
+    --cor-fonte: #F9F7F7;
+
+    --cor-preto: #000000;
+    --cor-fundo: linear-gradient(to bottom, var(--cor-secundaria), 70%, var(--cor-principal));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+  }
+  
+  body {
+    background: var(--cor-fundo);
+    color: var(--cor-fonte);
+    margin-top: 20vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 100vh;
+  }
+
+ body h1 {
+    
+    font-size: var(--fonte-titulo);
+    color: var(--cor-fonte);
+  }
+
+  body p {
+    font-size: var(--fonte-texto);
+    color: var(--cor-fonte);
+  }
+
+  textarea:focus, input:focus{
+    outline: none;
+  }
+  
+  a {
+    font-size: .8rem;
+  }
+  
+  a:hover {
+    color: var(--cor-preto);
+  }
+  
+  /* container login */
+  #login-container {
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* formulário */
+  form {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+  
+  label, input {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+  
+  label {
+    font-weight: var(--fonte-texto);
+    font-size: .8rem;
+  }
+  
+  input {
+    border-bottom: 2px solid #000000;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-weight: var(--fonte-texto);
+  }
+
+  
+  .a{
+    margin-top: 5px;
+    color: var(--cor-fonte);
+    background-color: transparent;
+
+  }
+  .botão {
+    border-bottom: 2px solid #000000;
+    height: 40px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px; 
+    margin-top: 20px;
+    background-color:#FFF; 
+    font-weight: var(--fonte-texto);
+    width: 100%;
+    color: var(--cor-preto);
+}
+.botão:hover {
+    
+    background-color:var(--cor-preto);
+    color: var(--cor-fonte);
+    transition: 0.3s; /* Adiciona uma transição suave durante o hover */
+}
+  input:focus {
+    border-bottom: 2px solid #83c5f3;
+  }
+  
+  #forgot-pass {
+    display: block;
+    text-align: right;
+  }
+  
+  input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #08558B;
+    font-weight: var(--fonte-texto);
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #1B223C;
+    transition: .5s;
+  }
+  
+  /* registrar */
+  #register-container p {
+    margin-bottom: 10px;
+  }
+
+  #login-container  h2, p, label {
+    color: #FFF;
+  }
